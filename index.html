@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+         background-color: bisque;
+     }
+    </style>
+</head>
+<body>
+    
+    <h1 align="center">Weather Report</h1>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <div id="div1" style="padding-left: 690px;">
+    <h4 style="padding-left: 20px;">Enter city name:</h4>
+    <input type="text" id="city">
+    <br>
+    <br>
+    <div id="div3" style="padding-left: 40px;">
+    <button onclick="weather()">Get Weather</button>
+    </div>
+    </div>
+    <br>
+    <div id="div2" align="center">
+    </div>
+    <br>
+    <div id="error" align="center">
+
+    </div>
+    <table align="center">
+      <tr>
+        <td id="temp_min"></td>
+      </tr>
+      <tr>
+        <td id="temp_max"></td>
+      </tr>
+    </table>
+    <br>
+    <table id = "table" align="center">
+      <tr>
+          <td>
+              <canvas id = "myChart" width = "400" height = "400"></canvas>
+          </td>
+      </tr>
+<script src="script.js"></script>
+</body>
+</html>
